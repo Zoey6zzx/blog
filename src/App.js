@@ -4,7 +4,7 @@ import UsersList from './components/user-list/UsersList';
 
 function App() {
   return (
-    <div>
+    <div class="container">
       <UsersList />
     </div>
 
