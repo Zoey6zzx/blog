@@ -4,4 +4,8 @@ export const getUsers = () => {
     return fetch('https://jsonplaceholder.typicode.com/users')
         .then(res => res.json())
         .then(users => users.map(user => new User(user.id, user.email, user.name)));
+        // .then(users => users.map(user => userObjToModel(user)))
 };
+
+// lo importo nei post, 
+export const userObjToModel = user => new User(user.id, user.email, user.name)

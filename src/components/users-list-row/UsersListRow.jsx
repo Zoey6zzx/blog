@@ -13,6 +13,7 @@ export default class UsersListRow extends React.Component {
                 <td>{ this.props.user.name }</td>
                 <td>{ this.props.user.email }</td>
                 <Link className="btn btn-primary" to={`/users/${this.props.user.id}`}>Dettaglio</Link>
+                <Link className="btn btn-primary" to={`/users/${this.props.user.id}/posts`}>Post</Link>
             </tr>
         )
     }
