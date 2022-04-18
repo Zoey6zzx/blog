@@ -18,7 +18,7 @@ export default class UsersList extends React.Component {
     render() {
         const rows = this.state.users.map(user => <UsersListRow user={user} />);
         return(
-            <table class="table">
+            <table className="table">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
